@@ -14,7 +14,7 @@ namespace PrimeiroApp.Views
 
         public NewItemPage()
         {
-            InitializeComponent();
+           InitializeComponent();
             BindingContext = new NewItemViewModel();
         }
     }

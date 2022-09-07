@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeiroApp.Views.Testes.TContentPage"
+             Title="TContentPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Label x:Name="lblTitulo"  Text="Cadastro Cliente"
+                   FontSize="35"
+                   TextColor="SeaGreen"
+                   FontAttributes="Bold"
+                   VerticalOptions="Start"
+                   HorizontalOptions="CenterAndExpand" />
+                <StackLayout Margin="0,15,0,0" 
+                         Orientation="Horizontal">
+                    <Label Text="Nome:"
+                       FontSize="20"
+                       TextColor="Black"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       Margin="0,15,0,0"/>
+                    <Entry Placeholder="Informe o nome "
+                       FontSize="20"
+                       PlaceholderColor="LightGray"
+                       VerticalOptions="Start"
+                       HorizontalOptions="FillAndExpand"
+                       Keyboard="Default"/>
+                </StackLayout>
+                <StackLayout Margin="0,0,0,0" 
+                         Orientation="Horizontal">
+                    <Label Text="Tefone:"
+                       FontSize="20"
+                       TextColor="Black"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       Margin="0,15,0,0"/>
+                    <Entry Placeholder="Informe o nome "
+                       FontSize="20"
+                       PlaceholderColor="LightGray"
+                       VerticalOptions="Start"
+                       HorizontalOptions="FillAndExpand"
+                       Keyboard="Telephone"/>
+                </StackLayout>
+                <StackLayout Margin="0,0,0,0" 
+                         Orientation="Horizontal">
+                    <Label Text="Opção01"
+                       FontSize="20"
+                       TextColor="Black"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       Margin="0,15,0,0"/>
+                    <Switch IsToggled="False"
+                        OnColor="Black"
+                        ThumbColor="red"
+                        VerticalOptions="End" />
+                    <Label Text="Opção02"
+                       FontSize="20"
+                       TextColor="Black"
+                       VerticalOptions="End"
+                       HorizontalOptions="Start"
+                       Margin="0,15,0,0"/>
+                    <Switch IsToggled="False"
+                        OnColor="Black"
+                        ThumbColor="red"
+                        VerticalOptions="End" />
+                </StackLayout>
+
+                <Label Text="Qual seu animal preferido?"  
+                   TextColor="Black" 
+                   FontSize="24" 
+                   Margin="0,15,0,0"/>
+                <RadioButton Content="Cat" />
+                <RadioButton Content="Dog" />
+                <RadioButton Content="Elephant" />
+                <RadioButton Content="Monkey"
+                         IsChecked="true" />
+
+                <ImageButton Source="xamarin_logo.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+
+
+                <Editor Placeholder="Enter text here" 
+                    PlaceholderColor="Olive" 
+                    Keyboard="Chat"
+                    BackgroundColor="Aqua"/>
+                <ActivityIndicator IsRunning="true"
+                               Color="Black"
+                               HeightRequest="100"
+                               WidthRequest="100"/>
+                <ProgressBar Progress="0.3" />
+
+                <Image Source="coffee.jpg"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"
+                   WidthRequest="150"
+                   HeightRequest="150"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

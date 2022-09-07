@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeiroApp.Views.Testes.Exemplo01">
+    
+    <AbsoluteLayout x:Name="ViewLayout">
+        <Image Source="tigrinho.jpg" 
+               Aspect="AspectFill" 
+               AbsoluteLayout.LayoutBounds="1,1,1,1"
+               AbsoluteLayout.LayoutFlags="All" />
+        <AbsoluteLayout x:Name="ViewControls" 
+                        AbsoluteLayout.LayoutBounds="1,1,1,.50"
+                        AbsoluteLayout.LayoutFlags="All" 
+                        BackgroundColor="#66000000" 
+                        Margin="10,10,10,10">
+            <StackLayout Orientation="Vertical" 
+                         Margin="20,20,10,10" 
+                         BackgroundColor="Transparent"
+                         AbsoluteLayout.LayoutFlags="All" 
+                         AbsoluteLayout.LayoutBounds="1,1,1,1">
+                <Grid Margin="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Mocha Caramelo Frappuccino" TextColor="White"             
+                            HorizontalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" />
+                    <Button Text="Creme" 
+                            BackgroundColor="#77000000" 
+                            BorderRadius="4" 
+                            BorderColor="White"
+                            BorderWidth="2" 
+                            TextColor="White" 
+                            FontSize="10" 
+                            Grid.Row="0" 
+                            Grid.Column="3" />
+                    <Button Text="Chantili" 
+                            FontSize="10" 
+                            BackgroundColor="#77000000" 
+                            BorderRadius="4"
+                            BorderColor="White"
+                            BorderWidth="2" 
+                            TextColor="White" 
+                            Grid.Row="1" 
+                            Grid.Column="3" />
+
+                </Grid>
+                <Grid Margin="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Button Text="Grande" 
+                            FontSize="Small" 
+                            BackgroundColor="#77000000" 
+                            BorderRadius="4"
+                            BorderColor="White"
+                            BorderWidth="2" 
+                            TextColor="White" 
+                            HorizontalOptions="FillAndExpand" 
+                            Grid.Column="0" />
+                    <Button Text="Médio"  
+                            FontSize="Small" 
+                            BackgroundColor="#77000000" 
+                            BorderRadius="4"
+                            BorderColor="White"
+                            BorderWidth="2" 
+                            TextColor="White" 
+                            HorizontalOptions="FillAndExpand" 
+                            Grid.Column="1" />
+                    <Button Text="Pequeno"  
+                            FontSize="Small" 
+                            BackgroundColor="#77000000" 
+                            BorderRadius="4"
+                            BorderColor="White"
+                            BorderWidth="2" 
+                            TextColor="White" 
+                            HorizontalOptions="FillAndExpand" 
+                            Grid.Column="2" />
+                </Grid>
+            </StackLayout>
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+</ContentPage>

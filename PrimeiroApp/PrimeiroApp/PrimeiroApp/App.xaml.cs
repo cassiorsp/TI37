@@ -1,5 +1,6 @@
 ﻿using PrimeiroApp.Services;
 using PrimeiroApp.Views;
+using PrimeiroApp.Views.Testes;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -14,7 +15,12 @@ namespace PrimeiroApp
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            //MainPage = pagina que vai iniciar 
+            //todo app precisa de uma mainpage
+            //MainPage = new AppShell();
+
+            MainPage = new Exemplo01();
+
         }
 
         protected override void OnStart()
