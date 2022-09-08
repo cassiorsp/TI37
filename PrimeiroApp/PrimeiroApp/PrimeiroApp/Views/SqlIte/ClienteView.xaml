@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeiroApp.Views.SqlIte.ClienteView">
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,10">
+            <Label Text="Dados Cliente"
+                   Margin="0,30,0,0"
+                   FontSize="30"
+                   TextColor="CornflowerBlue"
+                   HorizontalOptions="Center"/>
+            <Label Text="Nome"
+                   TextColor="CornflowerBlue"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+            <Entry Placeholder="Nome Cliente"
+                   TextColor="CornflowerBlue"
+                   FontSize="20"/>
+            <Label Text="Telefone"
+                   TextColor="CornflowerBlue"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+            <Entry Placeholder="Telefone Cliente"
+                   TextColor="CornflowerBlue"
+                   FontSize="20"/>
+            <Label Text="Cidade"
+                   TextColor="CornflowerBlue"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+            <Entry Placeholder="Cidade Cliente"
+                   TextColor="CornflowerBlue"
+                   FontSize="20"/>
+            <StackLayout Margin="0,20,0,0"
+                         Orientation="Horizontal"
+                         HorizontalOptions="FillAndExpand">
+                <Button Text="Salvar"
+                        Clicked="SalvarCliente"
+                        BackgroundColor="Black"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        CornerRadius="5"
+                        TextColor="CornflowerBlue"
+                        WidthRequest="120"/>
+                <Button Text="Deletar"
+                        BackgroundColor="Black"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        CornerRadius="5"
+                        TextColor="CornflowerBlue"
+                        Clicked="DeletarCliente"
+                        WidthRequest="120"/>
+                <Button Text="Fechar"
+                        BackgroundColor="Black"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        CornerRadius="5"
+                        TextColor="CornflowerBlue"
+                        Clicked="FecharApp"
+                        WidthRequest="120"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

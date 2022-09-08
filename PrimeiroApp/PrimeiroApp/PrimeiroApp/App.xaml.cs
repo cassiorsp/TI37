@@ -1,5 +1,6 @@
 ﻿using PrimeiroApp.Services;
 using PrimeiroApp.Views;
+using PrimeiroApp.Views.SqlIte;
 using PrimeiroApp.Views.Testes;
 using System;
 using Xamarin.Forms;
@@ -19,7 +20,7 @@ namespace PrimeiroApp
             //todo app precisa de uma mainpage
             //MainPage = new AppShell();
 
-            MainPage = new Exemplo01();
+            MainPage = new ClienteView();
 
         }
 
